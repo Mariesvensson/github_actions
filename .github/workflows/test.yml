@@ -6,11 +6,11 @@ jobs:
     steps: 
       -name: Get code
        uses: actions/checkout@v3
-      -name: install NodeJS
+      -name: Install NodeJS
        uses: actions/setup-node@v3
         with:
           node-version: 18
-      -name: install dependecis
+      -name: Install dependecis
         run: npm ci
       -name: run tests
         run: npm test
